@@ -12,3 +12,11 @@ Explanation: The merged string will be merged as so:
 word1:  a   b   c
 word2:    p   q   r
 merged: a p b q c r */
+
+var mergeAlternately = function(word1, word2) {
+    arr=[],word1.length>word2.length?le=word1.length:le=word2.length;
+    for(i=0;i<le;i++){
+        arr.push(word1[i],word2[i])
+    }
+    return arr.join('');
+};
